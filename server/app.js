@@ -11,7 +11,7 @@ const app = express();
 const url = `http://www.omdbapi.com/?apikey=${process.env.API_KEY}`;
 let cache = {};
 
-// middleware: morgan's dev format
+// morgan 'dev' middleware
 app.use(morgan('dev'));
 
 // routes for GET requests
